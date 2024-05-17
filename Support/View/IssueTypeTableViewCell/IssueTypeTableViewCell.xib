@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IssueTypeTableViewCell" rowHeight="124" id="KGk-i7-Jjw" customClass="IssueTypeTableViewCell" customModule="Support" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="569" height="124"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="569" height="124"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w6N-t7-zdX">
+                        <rect key="frame" x="0.0" y="0.0" width="569" height="124"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksT-uc-UWu">
+                                <rect key="frame" x="20" y="18.666666666666671" width="505" height="87"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <color key="textColor" name="labelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XRl-jO-14u">
+                                <rect key="frame" x="525" y="0.0" width="24" height="124"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="backgoundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="XRl-jO-14u" secondAttribute="trailing" constant="20" id="5s5-Fe-h1J"/>
+                            <constraint firstAttribute="bottom" secondItem="XRl-jO-14u" secondAttribute="bottom" id="HCw-E1-l46"/>
+                            <constraint firstItem="ksT-uc-UWu" firstAttribute="leading" secondItem="w6N-t7-zdX" secondAttribute="leading" constant="20" id="O0s-XV-T1I"/>
+                            <constraint firstAttribute="bottom" secondItem="ksT-uc-UWu" secondAttribute="bottom" constant="18.5" id="Ojo-n6-wxU"/>
+                            <constraint firstItem="XRl-jO-14u" firstAttribute="leading" secondItem="ksT-uc-UWu" secondAttribute="trailing" id="XmV-WA-ObM"/>
+                            <constraint firstAttribute="trailing" secondItem="ksT-uc-UWu" secondAttribute="trailing" constant="44" id="btQ-qS-WYi"/>
+                            <constraint firstItem="ksT-uc-UWu" firstAttribute="top" secondItem="w6N-t7-zdX" secondAttribute="top" constant="18.5" id="dda-9i-1CB"/>
+                            <constraint firstItem="XRl-jO-14u" firstAttribute="top" secondItem="w6N-t7-zdX" secondAttribute="top" id="saF-8X-VDk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="w6N-t7-zdX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6IU-au-ohc"/>
+                    <constraint firstAttribute="bottom" secondItem="w6N-t7-zdX" secondAttribute="bottom" id="9bB-pv-SJx"/>
+                    <constraint firstItem="w6N-t7-zdX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Lo1-1u-UdP"/>
+                    <constraint firstAttribute="trailing" secondItem="w6N-t7-zdX" secondAttribute="trailing" id="guD-cB-IlQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="isSelectedOptionImg" destination="XRl-jO-14u" id="QiB-MJ-z5x"/>
+                <outlet property="issueSingleOption" destination="ksT-uc-UWu" id="BtX-m4-5iX"/>
+            </connections>
+            <point key="canvasLocation" x="246.56488549618319" y="88.732394366197184"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="backgoundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="labelColor">
+            <color red="0.033000000000000002" green="0.032999999821186066" blue="0.032999999821186066" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
